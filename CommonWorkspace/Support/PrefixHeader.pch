@@ -23,7 +23,7 @@
 #import <ReactiveObjC.h>
 #import <JSONModel.h>
 #import <IQKeyboardManager.h>
-
+#import <Masonry.h>
 
 #pragma mark ----- 引用基类
 #import "ZYBaseViewController.h"

@@ -28,6 +28,9 @@
 		562269E42451D462008884A9 /* Contract.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562269E32451D462008884A9 /* Contract.storyboard */; };
 		562269E62451D46A008884A9 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562269E52451D46A008884A9 /* Mine.storyboard */; };
 		562269E92451D541008884A9 /* QuotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562269E82451D541008884A9 /* QuotationViewController.m */; };
+		565AC8B32453CC600022299C /* ZYWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 565AC8B22453CC600022299C /* ZYWebVC.m */; };
+		565AC8B92453CC9D0022299C /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = 565AC8B52453CC9D0022299C /* PGIndexBannerSubiew.m */; };
+		565AC8BA2453CC9D0022299C /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 565AC8B62453CC9D0022299C /* NewPagedFlowView.m */; };
 		568B73EE22D704A3002E6F2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B73ED22D704A3002E6F2B /* AppDelegate.m */; };
 		568B73F422D704A3002E6F2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568B73F222D704A3002E6F2B /* Main.storyboard */; };
 		568B73F922D704A5002E6F2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568B73F822D704A5002E6F2B /* Assets.xcassets */; };
@@ -114,6 +117,12 @@
 		562269E52451D46A008884A9 /* Mine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		562269E72451D541008884A9 /* QuotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuotationViewController.h; sourceTree = "<group>"; };
 		562269E82451D541008884A9 /* QuotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuotationViewController.m; sourceTree = "<group>"; };
+		565AC8B12453CC600022299C /* ZYWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWebVC.h; sourceTree = "<group>"; };
+		565AC8B22453CC600022299C /* ZYWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWebVC.m; sourceTree = "<group>"; };
+		565AC8B52453CC9D0022299C /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
+		565AC8B62453CC9D0022299C /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPagedFlowView.m; sourceTree = "<group>"; };
+		565AC8B72453CC9D0022299C /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIndexBannerSubiew.h; sourceTree = "<group>"; };
+		565AC8B82453CC9D0022299C /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
 		568B73E922D704A3002E6F2B /* BTACOIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTACOIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568B73EC22D704A3002E6F2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		568B73ED22D704A3002E6F2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -290,11 +299,11 @@
 			isa = PBXGroup;
 			children = (
 				562269D32451D3AC008884A9 /* YBPopupMenu.h */,
-				562269D42451D3AC008884A9 /* YBRectConst.m */,
-				562269D52451D3AC008884A9 /* YBPopupMenuPath.m */,
-				562269D62451D3AC008884A9 /* YBRectConst.h */,
 				562269D72451D3AC008884A9 /* YBPopupMenu.m */,
 				562269D82451D3AC008884A9 /* YBPopupMenuPath.h */,
+				562269D52451D3AC008884A9 /* YBPopupMenuPath.m */,
+				562269D62451D3AC008884A9 /* YBRectConst.h */,
+				562269D42451D3AC008884A9 /* YBRectConst.m */,
 			);
 			path = YBPopupMenu;
 			sourceTree = "<group>";
@@ -309,6 +318,17 @@
 				562269E52451D46A008884A9 /* Mine.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		565AC8B42453CC9D0022299C /* NewPagedFlowView */ = {
+			isa = PBXGroup;
+			children = (
+				565AC8B82453CC9D0022299C /* NewPagedFlowView.h */,
+				565AC8B62453CC9D0022299C /* NewPagedFlowView.m */,
+				565AC8B72453CC9D0022299C /* PGIndexBannerSubiew.h */,
+				565AC8B52453CC9D0022299C /* PGIndexBannerSubiew.m */,
+			);
+			path = NewPagedFlowView;
 			sourceTree = "<group>";
 		};
 		568B73E022D704A3002E6F2B = {
@@ -476,6 +496,7 @@
 		568B742C22D70850002E6F2B /* ThirdLibs[第三方库] */ = {
 			isa = PBXGroup;
 			children = (
+				565AC8B42453CC9D0022299C /* NewPagedFlowView */,
 				562269D22451D3AC008884A9 /* YBPopupMenu */,
 				562269B42451D3A4008884A9 /* SDCycleScrollView */,
 			);
@@ -612,6 +633,8 @@
 				56E7560E22D736C6001B21D9 /* ZYBaseNavigationController.m */,
 				56E7561322D73718001B21D9 /* ZYBaseTabBarController.h */,
 				56E7561422D73718001B21D9 /* ZYBaseTabBarController.m */,
+				565AC8B12453CC600022299C /* ZYWebVC.h */,
+				565AC8B22453CC600022299C /* ZYWebVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -822,8 +845,10 @@
 				56E7561222D736E3001B21D9 /* ZYBaseTableViewCell.m in Sources */,
 				562269E92451D541008884A9 /* QuotationViewController.m in Sources */,
 				56E7560522D73225001B21D9 /* ZYBaseBLL.m in Sources */,
+				565AC8BA2453CC9D0022299C /* NewPagedFlowView.m in Sources */,
 				56E7561822D7373E001B21D9 /* HomeViewController.m in Sources */,
 				568B73FF22D704A5002E6F2B /* main.m in Sources */,
+				565AC8B32453CC600022299C /* ZYWebVC.m in Sources */,
 				568B743622D70E02002E6F2B /* UserData.m in Sources */,
 				562269DB2451D3AC008884A9 /* YBPopupMenu.m in Sources */,
 				56E7560F22D736C6001B21D9 /* ZYBaseNavigationController.m in Sources */,
@@ -844,6 +869,7 @@
 				56E7560222D72B87001B21D9 /* NSString+RegularExpression.m in Sources */,
 				56E755F222D719EB001B21D9 /* ZYDataUtils.m in Sources */,
 				568B743C22D70FF5002E6F2B /* NetWork.m in Sources */,
+				565AC8B92453CC9D0022299C /* PGIndexBannerSubiew.m in Sources */,
 				56E755E922D7199F001B21D9 /* ZYDeviceUtils.m in Sources */,
 				562269D02451D3A4008884A9 /* TAAnimatedDotView.m in Sources */,
 				568B73EE22D704A3002E6F2B /* AppDelegate.m in Sources */,

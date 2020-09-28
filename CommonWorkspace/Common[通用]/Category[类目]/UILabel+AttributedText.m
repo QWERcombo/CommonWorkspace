@@ -18,16 +18,19 @@
     
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:fullText];
     
-    NSRange replaceRange = [fullText rangeOfString:replaceText];
+    NSArray *replaceRangeArr = [replaceText componentsSeparatedByString:@"-"];
     
-    if (font) {
+    for (NSString *replaceSubText in replaceRangeArr) {
+        NSRange replaceSubRange = [fullText rangeOfString:replaceSubText];
         
-        [attributedString addAttribute:NSFontAttributeName value:font range:replaceRange];
-    }
-    
-    if (color) {
+        if (font) {
+            [attributedString addAttribute:NSFontAttributeName value:font range:replaceSubRange];
+        }
         
-        [attributedString addAttribute:NSForegroundColorAttributeName value:color range:replaceRange];
+        if (color) {
+            [attributedString addAttribute:NSForegroundColorAttributeName value:color range:replaceSubRange];
+        }
+        
     }
     
     return attributedString;

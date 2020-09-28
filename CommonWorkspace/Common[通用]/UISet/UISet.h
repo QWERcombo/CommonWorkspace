@@ -10,22 +10,51 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- 用与定义基础控件某些显示状态的设置以便复用
- */
+typedef NS_ENUM(NSUInteger, ImageViewCornerType) {
+    ImageViewCornerType_isNone,
+    ImageViewCornerType_isNormal,
+    ImageViewCornerType_isCircle,
+};
+
 @interface UISet : NSObject
 
+///Label
++ (UILabel *)getCustomLabelWithText:(NSString *)labText
+                          textColor:(UIColor *)labTextColor
+                           textFont:(UIFont *)labTextFont
+                      textAlignment:(NSTextAlignment)textAlignment;
 
-/**
- 带圆角的View
+///Button
++ (UIButton *)getCustomButtonWithBtnTitle:(null_unspecified NSString *)btnTitle
+                            btnTitleColor:(null_unspecified UIColor *)btnTitleColor
+                             btnTitleFont:(null_unspecified UIFont *)btnTitleFont
+                             btnNormalImg:(null_unspecified UIImage *)normalImg
+                             btnSelectImg:(null_unspecified UIImage *)selectImg
+                                   target:(null_unspecified id)target
+                                      sel:(null_unspecified SEL)sel;
 
- @param targetView View
- @param cornerRadius 半径
- */
-- (void)setNormalView:(UIView *)targetView
-         cornerRadius:(CGFloat)cornerRadius;
+///TextField
++ (UITextField *)getCustomTextFieldWithTextFont:(UIFont *)textFont
+                                      textColor:(UIColor *)textColor
+                                     isShowLine:(BOOL)isShowLine;
 
+///UIImageView
+///isCircle 0.圆角 1.圆形
+///cornerRadius 圆角值
++ (UIImageView *)getCustomImageViewCornerType:(ImageViewCornerType)cornerType
+                                 cornerRadius:(CGFloat)cornerRadius;
 
+///绘制虚线
+///param lineView:       需要绘制成虚线的view
+///param lineLength:     虚线的宽度
+///param lineSpacing:    虚线的间距
+///param lineColor:      虚线的颜色
+///param lineDirection   虚线的方向  YES 为水平方向， NO 为垂直方向
++ (void)drawLineOfDashByCAShapeLayer:(UIView *)lineView
+                          lineLength:(int)lineLength
+                         lineSpacing:(int)lineSpacing
+                           lineColor:(UIColor *)lineColor
+                         isHorizonal:(BOOL)isHorizonal;
 
 @end
 

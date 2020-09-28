@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F71BB42521669200824794 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71BAE2521669200824794 /* SDPhotoBrowser.m */; };
+		04F71BB52521669200824794 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71BAF2521669200824794 /* SDWaitingView.m */; };
+		04F71BB62521669200824794 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71BB02521669200824794 /* SDBrowserImageView.m */; };
+		04F71BC2252167D400824794 /* NEUBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71BBD252167D400824794 /* NEUBase64.m */; };
+		04F71BC3252167D400824794 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71BBE252167D400824794 /* NSData+AES.m */; };
+		04F71BC4252167D400824794 /* JYLSecurityUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71BC1252167D400824794 /* JYLSecurityUtils.m */; };
+		04F71BCD252168D600824794 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71BCB252168D500824794 /* UIImageView+CornerRadius.m */; };
+		04F71BD32521690200824794 /* UIViewController+JYLPushUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71BD12521690100824794 /* UIViewController+JYLPushUtils.m */; };
+		04F71BD9252169DD00824794 /* UIView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F71BD8252169DD00824794 /* UIView+Additional.m */; };
 		52F19A94E69315C5D3B73020 /* libPods-CommonWorkspace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F38EBEF23518AAE743A194 /* libPods-CommonWorkspace.a */; };
 		562269AF2451CE9C008884A9 /* ZYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562269AE2451CE9C008884A9 /* ZYBaseTableViewController.m */; };
 		562269B22451D28A008884A9 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 562269B12451D28A008884A9 /* Const.m */; };
@@ -83,6 +92,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04F71BAD2521669200824794 /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		04F71BAE2521669200824794 /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		04F71BAF2521669200824794 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
+		04F71BB02521669200824794 /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		04F71BB12521669200824794 /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		04F71BB22521669200824794 /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		04F71BB32521669200824794 /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		04F71BBB252167D400824794 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		04F71BBC252167D400824794 /* JYLSecurityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLSecurityUtils.h; sourceTree = "<group>"; };
+		04F71BBD252167D400824794 /* NEUBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEUBase64.m; sourceTree = "<group>"; };
+		04F71BBE252167D400824794 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		04F71BBF252167D400824794 /* NEUDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUDefines.h; sourceTree = "<group>"; };
+		04F71BC0252167D400824794 /* NEUBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUBase64.h; sourceTree = "<group>"; };
+		04F71BC1252167D400824794 /* JYLSecurityUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLSecurityUtils.m; sourceTree = "<group>"; };
+		04F71BCB252168D500824794 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		04F71BCC252168D600824794 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		04F71BD12521690100824794 /* UIViewController+JYLPushUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JYLPushUtils.m"; sourceTree = "<group>"; };
+		04F71BD22521690200824794 /* UIViewController+JYLPushUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JYLPushUtils.h"; sourceTree = "<group>"; };
+		04F71BD7252169DD00824794 /* UIView+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Additional.h"; sourceTree = "<group>"; };
+		04F71BD8252169DD00824794 /* UIView+Additional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additional.m"; sourceTree = "<group>"; };
 		562269AD2451CE9C008884A9 /* ZYBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYBaseTableViewController.h; sourceTree = "<group>"; };
 		562269AE2451CE9C008884A9 /* ZYBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYBaseTableViewController.m; sourceTree = "<group>"; };
 		562269B02451D277008884A9 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
@@ -223,6 +252,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04F71BAC2521669200824794 /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				04F71BAD2521669200824794 /* SDPhotoBrowserConfig.h */,
+				04F71BAE2521669200824794 /* SDPhotoBrowser.m */,
+				04F71BAF2521669200824794 /* SDWaitingView.m */,
+				04F71BB02521669200824794 /* SDBrowserImageView.m */,
+				04F71BB12521669200824794 /* SDWaitingView.h */,
+				04F71BB22521669200824794 /* SDPhotoBrowser.h */,
+				04F71BB32521669200824794 /* SDBrowserImageView.h */,
+			);
+			path = SDPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		04F71BBA252167D400824794 /* SecurityUtils【加解密】 */ = {
+			isa = PBXGroup;
+			children = (
+				04F71BBC252167D400824794 /* JYLSecurityUtils.h */,
+				04F71BC1252167D400824794 /* JYLSecurityUtils.m */,
+				04F71BC0252167D400824794 /* NEUBase64.h */,
+				04F71BBD252167D400824794 /* NEUBase64.m */,
+				04F71BBF252167D400824794 /* NEUDefines.h */,
+				04F71BBB252167D400824794 /* NSData+AES.h */,
+				04F71BBE252167D400824794 /* NSData+AES.m */,
+			);
+			path = "SecurityUtils【加解密】";
+			sourceTree = "<group>";
+		};
 		37D9CD5B387EAC8294531691 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +516,7 @@
 		568B742922D707E9002E6F2B /* ToolBox[工具类] */ = {
 			isa = PBXGroup;
 			children = (
+				04F71BBA252167D400824794 /* SecurityUtils【加解密】 */,
 				568B744A22D71235002E6F2B /* PromptUtils[气泡提示相关] */,
 				568B744922D711AF002E6F2B /* AlertUtils[弹窗相关] */,
 				568B744822D7114F002E6F2B /* ImageUtils[图片相关] */,
@@ -483,7 +541,6 @@
 		568B742B22D70827002E6F2B /* Common[通用] */ = {
 			isa = PBXGroup;
 			children = (
-				568B743322D70DBD002E6F2B /* Extension[延展] */,
 				568B743222D70DAF002E6F2B /* Category[类目] */,
 				568B743122D70D6B002E6F2B /* UserData[用户数据] */,
 				568B743022D70D0C002E6F2B /* UISet */,
@@ -496,6 +553,7 @@
 		568B742C22D70850002E6F2B /* ThirdLibs[第三方库] */ = {
 			isa = PBXGroup;
 			children = (
+				04F71BAC2521669200824794 /* SDPhotoBrowser */,
 				565AC8B42453CC9D0022299C /* NewPagedFlowView */,
 				562269D22451D3AC008884A9 /* YBPopupMenu */,
 				562269B42451D3A4008884A9 /* SDCycleScrollView */,
@@ -547,6 +605,10 @@
 		568B743222D70DAF002E6F2B /* Category[类目] */ = {
 			isa = PBXGroup;
 			children = (
+				04F71BD22521690200824794 /* UIViewController+JYLPushUtils.h */,
+				04F71BD12521690100824794 /* UIViewController+JYLPushUtils.m */,
+				04F71BCC252168D600824794 /* UIImageView+CornerRadius.h */,
+				04F71BCB252168D500824794 /* UIImageView+CornerRadius.m */,
 				56E755F322D71B3C001B21D9 /* UIViewController+CommonFunc.h */,
 				56E755F422D71B3C001B21D9 /* UIViewController+CommonFunc.m */,
 				56E755F622D726B7001B21D9 /* UIColor+Additional.h */,
@@ -557,15 +619,10 @@
 				56E755FE22D72AC9001B21D9 /* UILabel+AttributedText.m */,
 				56E7560022D72B87001B21D9 /* NSString+RegularExpression.h */,
 				56E7560122D72B87001B21D9 /* NSString+RegularExpression.m */,
+				04F71BD7252169DD00824794 /* UIView+Additional.h */,
+				04F71BD8252169DD00824794 /* UIView+Additional.m */,
 			);
 			path = "Category[类目]";
-			sourceTree = "<group>";
-		};
-		568B743322D70DBD002E6F2B /* Extension[延展] */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Extension[延展]";
 			sourceTree = "<group>";
 		};
 		568B744522D710EC002E6F2B /* DataUtils[数据相关] */ = {
@@ -842,13 +899,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F71BD32521690200824794 /* UIViewController+JYLPushUtils.m in Sources */,
 				56E7561222D736E3001B21D9 /* ZYBaseTableViewCell.m in Sources */,
 				562269E92451D541008884A9 /* QuotationViewController.m in Sources */,
+				04F71BB62521669200824794 /* SDBrowserImageView.m in Sources */,
 				56E7560522D73225001B21D9 /* ZYBaseBLL.m in Sources */,
 				565AC8BA2453CC9D0022299C /* NewPagedFlowView.m in Sources */,
+				04F71BB42521669200824794 /* SDPhotoBrowser.m in Sources */,
 				56E7561822D7373E001B21D9 /* HomeViewController.m in Sources */,
 				568B73FF22D704A5002E6F2B /* main.m in Sources */,
 				565AC8B32453CC600022299C /* ZYWebVC.m in Sources */,
+				04F71BCD252168D600824794 /* UIImageView+CornerRadius.m in Sources */,
 				568B743622D70E02002E6F2B /* UserData.m in Sources */,
 				562269DB2451D3AC008884A9 /* YBPopupMenu.m in Sources */,
 				56E7560F22D736C6001B21D9 /* ZYBaseNavigationController.m in Sources */,
@@ -856,11 +917,14 @@
 				56E755F822D726B7001B21D9 /* UIColor+Additional.m in Sources */,
 				568B743922D70E36002E6F2B /* UISet.m in Sources */,
 				568B746522D71784002E6F2B /* ZYAlertUtils.m in Sources */,
+				04F71BC4252167D400824794 /* JYLSecurityUtils.m in Sources */,
+				04F71BD9252169DD00824794 /* UIView+Additional.m in Sources */,
 				568B746222D71757002E6F2B /* ZYPromptUtils.m in Sources */,
 				56D832EA2451D651003EB8BF /* LoginVC.m in Sources */,
 				56E755F522D71B3C001B21D9 /* UIViewController+CommonFunc.m in Sources */,
 				562269CC2451D3A4008884A9 /* UIView+SDExtension.m in Sources */,
 				56D832F32451E603003EB8BF /* ZYBaseModel.m in Sources */,
+				04F71BB52521669200824794 /* SDWaitingView.m in Sources */,
 				56E755FF22D72AC9001B21D9 /* UILabel+AttributedText.m in Sources */,
 				56E7562122D7377B001B21D9 /* MineViewController.m in Sources */,
 				56D832E72451D5D5003EB8BF /* ContractViewController.m in Sources */,
@@ -873,9 +937,11 @@
 				56E755E922D7199F001B21D9 /* ZYDeviceUtils.m in Sources */,
 				562269D02451D3A4008884A9 /* TAAnimatedDotView.m in Sources */,
 				568B73EE22D704A3002E6F2B /* AppDelegate.m in Sources */,
+				04F71BC2252167D400824794 /* NEUBase64.m in Sources */,
 				56E755E622D71996001B21D9 /* ZYImageUtils.m in Sources */,
 				56E7560C22D736A5001B21D9 /* ZYBaseViewController.m in Sources */,
 				562269B22451D28A008884A9 /* Const.m in Sources */,
+				04F71BC3252167D400824794 /* NSData+AES.m in Sources */,
 				56E755FC22D72A1C001B21D9 /* UIButton+Additional.m in Sources */,
 				56D832F02451DA85003EB8BF /* ZYBaseView.m in Sources */,
 				562269CB2451D3A4008884A9 /* SDCycleScrollView.m in Sources */,

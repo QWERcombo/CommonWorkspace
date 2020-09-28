@@ -25,50 +25,25 @@
 }
 
 
-- (BOOL)isHasValue:(id)str{
-    
-    if ([self isNull:str]) {
-        return NO;
++ (BOOL)removeFileWithFilePath:(NSString *)path {
+    NSFileManager *manager = [NSFileManager defaultManager];
+    BOOL isSuccess = NO;
+    NSError *error;
+    if ([manager fileExistsAtPath:path]) {
+        isSuccess = [manager removeItemAtPath:path error:&error];
+        NSAssert(isSuccess, [error.userInfo descriptionWithLocale:nil]);
     }
     
-    if ([str isKindOfClass:[NSString class]]) {
-        
-        if (str && [str stringByReplacingOccurrencesOfString:@" " withString:@""].length > 0)
-        {
-            return YES;
-            
-        }else{
-            
-            return NO;
-        }
-        
-    }else{
-        NSNumber *number = str;
-        if ([number stringValue] && [[number stringValue] stringByReplacingOccurrencesOfString:@" " withString:@""].length > 0) {
-            
-            return YES;
-        }else{
-            
-            return NO;
-        }
-        
-    }
-    
-}
-
-- (BOOL)isNull:(id)targetId{
-    
-    if ([targetId isEqual:[NSNull null]]) {
-        
-        return YES;
-    }else{
-        
-        return NO;
-    }
-    
+    return isSuccess;
 }
 
 
+- (NSString *)getCacheSize {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cachesDir = [paths objectAtIndex:0];
+    
+    return [NSString stringWithFormat:@"%.2fM",[self folderSizeAtPath:cachesDir]];
+}
 - (void)clearCache {
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);

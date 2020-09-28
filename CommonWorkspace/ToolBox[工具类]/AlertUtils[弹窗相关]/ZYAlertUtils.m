@@ -10,21 +10,26 @@
 
 @implementation ZYAlertUtils
 
-+ (ZYAlertUtils *)sharedDDAlertUtils
-{
++ (void)showSystemAlertWithTitle:(NSString *)title
+                         message:(NSString *)message
+                     cancelTitle:(NSString *)cancelTitle
+                       doneTitle:(NSString *)doneTitle
+                     doneHandler:(void(^)(void))doneHandler {
     
-    static ZYAlertUtils *ddAlertUtils;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
-        ddAlertUtils = [[ZYAlertUtils alloc] init];
-        
-    });
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     
-    return ddAlertUtils;
+    [alert addAction:[UIAlertAction actionWithTitle:doneTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        doneHandler();
+    }]];
+    
+    if (cancelTitle.length) {
+        [alert addAction:[UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        }]];
+    }
+    
+    [[UIViewController currentViewController] presentViewController:alert animated:YES completion:^{
+        
+    }];
 }
-
-
-
 
 @end

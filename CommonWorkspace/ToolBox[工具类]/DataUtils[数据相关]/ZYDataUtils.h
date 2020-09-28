@@ -21,20 +21,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (ZYDataUtils *)sharedDDDataUtils;
 
-/**
- *  检测str是否有值
- *
- *  @param str 字符串
- *
- *  @return 有值，没有值
- */
++ (BOOL)removeFileWithFilePath:(NSString *)path;
+
+///检测str是否有值
 - (BOOL)isHasValue:(id)str;
 
-
-/**
- 清除缓存
- */
+///清除缓存
 - (void)clearCache;
+///缓存大小
+- (NSString *)getCacheSize;
 
 @end
 

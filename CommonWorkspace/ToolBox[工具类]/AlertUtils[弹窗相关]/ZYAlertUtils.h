@@ -15,14 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface ZYAlertUtils : NSObject
 
-/**
- 初始化单例
- 
- @return 单例对象
- */
-+ (ZYAlertUtils *)sharedDDAlertUtils;
-
-
++ (void)showSystemAlertWithTitle:(NSString *)title
+                         message:(NSString *)message
+                     cancelTitle:(NSString *)cancelTitle
+                       doneTitle:(NSString *)doneTitle
+                     doneHandler:(void(^)(void))doneHandler;
 
 
 @end

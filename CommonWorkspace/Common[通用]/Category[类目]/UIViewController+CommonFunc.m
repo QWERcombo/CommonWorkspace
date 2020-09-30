@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+CommonFunc.h"
-#import "ZYPromptUtils.h"
+#import "BasePromptUtils.h"
 
 @implementation UIViewController (CommonFunc)
 
@@ -15,12 +15,12 @@
 - (void)loading{
     
     [self endViewEditing];
-    [ZYPromptUtils loading];
+    [BasePromptUtils loading];
 }
 
 - (void)lodingMsg:(NSString *)msg{
     
-    [ZYPromptUtils loadingWithMsg:msg];
+    [BasePromptUtils loadingWithMsg:msg];
 }
 
 //结束页面编辑
@@ -32,7 +32,7 @@
 #pragma 隐藏网络请求指示器
 - (void)hideLoading {
     
-    [ZYPromptUtils hideLoading];
+    [BasePromptUtils hideLoading];
     [self hideStatusLoading];
 }
 
@@ -42,7 +42,7 @@
     
     [self hideStatusLoading];
     [self.view endEditing:YES];
-    [ZYPromptUtils promptMsg:msg];
+    [BasePromptUtils promptMsg:msg];
 }
 
 //气泡提示 with block
@@ -50,7 +50,7 @@
     
     [self hideStatusLoading];
     
-    [ZYPromptUtils promptMsg:msg promptCompletion:^{
+    [BasePromptUtils promptMsg:msg promptCompletion:^{
         promptCompletion();
     }];
     
@@ -61,12 +61,12 @@
     [self hideStatusLoading];
     [self.view endEditing:YES];
     
-    [ZYPromptUtils promptMsg:msg];
+    [BasePromptUtils promptMsg:msg];
 }
 
 - (void)promptReqSuccess:(NSString *)msg{
     
-    [ZYPromptUtils promptSuccess:msg promptCompletion:^{}];
+    [BasePromptUtils promptSuccess:msg promptCompletion:^{}];
     
 }
 

@@ -9,11 +9,10 @@
 #ifndef TipMsg_h
 #define TipMsg_h
 
-//                   --------- 提示文字 ---------
+//--------- 提示文字 ---------
 
 #define TIP_NETWORK_NO_CONNECTION @"网络连接失败" /**<无网络*/
 #define TIP_NETWORK_TIMEOUT @"网络请求超时" /**<请求超时*/
-#define TIP_RESPONSE_DATA_ERR @"获取数据失败" /**<请求超时*/
 
 
 

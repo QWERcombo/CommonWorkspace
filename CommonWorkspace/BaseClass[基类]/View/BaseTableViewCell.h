@@ -1,5 +1,5 @@
 //
-//  UIColor+Additional.h
+//  DDBaseTableViewCell.h
 //  DDLife
 //
 //  Created by 赵越 on 2019/7/11.
@@ -10,9 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIColor (Additional)
-///16进制颜色转换
-+ (UIColor *)colorWithHexString:(NSString *)color;
+@interface BaseTableViewCell : UITableViewCell
+
+
++ (instancetype)initCell:(UITableView *)tableView cellName:(NSString *)cellName;
 
 @end
 

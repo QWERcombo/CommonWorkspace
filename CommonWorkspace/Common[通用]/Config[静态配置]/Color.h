@@ -9,7 +9,7 @@
 #ifndef Color_h
 #define Color_h
 
-//          ------ 颜色配置 -------
+//------ 颜色配置 -------
 
 #define HEX_COLOR(hexString)  [UIColor colorWithHexString:hexString]
 

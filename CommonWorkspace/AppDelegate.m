@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ZYBaseTabBarController.h"
+#import "BaseTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -109,7 +109,7 @@
 
 - (void)setRootViewController {
     
-    self.tabBar = [[ZYBaseTabBarController alloc] init];
+    self.tabBar = [[BaseTabBarController alloc] init];
     
     self.window.rootViewController = self.tabBar;
     

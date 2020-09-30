@@ -28,8 +28,6 @@ typedef NS_ENUM(NSUInteger, DDButtonEdgeInsetsStyle) {
 - (void)layoutButtonWithEdgeInsetsStyle:(DDButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space;
 
-
-
 @end
 
 NS_ASSUME_NONNULL_END

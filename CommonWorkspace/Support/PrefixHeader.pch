@@ -26,12 +26,10 @@
 #import <Masonry.h>
 
 #pragma mark ----- 引用基类
-#import "ZYBaseViewController.h"
-#import "ZYBaseTabBarController.h"
-#import "ZYBaseTableViewCell.h"
-#import "ZYBaseTableViewController.h"
-#import "ZYBaseNavigationController.h"
-#import "ZYBaseView.h"
+//#import "BaseViewController.h"
+//#import "BaseTabBarController.h"
+//#import "BaseTableViewController.h"
+//#import "BaseNavigationController.h"
 
 #pragma mark ----- 引用通用类
 #import "NetWork.h"
@@ -43,14 +41,13 @@
 #import "UILabel+AttributedText.h"
 #import "NSString+RegularExpression.h"
 
-
 #pragma mark ----- 引用工具类
-#import "ZYDataUtils.h"
-#import "ZYDateUtils.h"
-#import "ZYAlertUtils.h"
-#import "ZYImageUtils.h"
-#import "ZYPromptUtils.h"
-#import "ZYDeviceUtils.h"
+#import "BaseDataUtils.h"
+#import "BaseDateUtils.h"
+#import "BaseAlertUtils.h"
+#import "BaseImageUtils.h"
+#import "BasePromptUtils.h"
+#import "BaseDeviceUtils.h"
 
 #pragma mark ----- 引用常量
 #import "Color.h"

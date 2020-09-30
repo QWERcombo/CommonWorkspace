@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///自定义圆角
 - (void)setCornerByRoundingCorners:(UIRectCorner)corners cornerRadii:(CGSize)cornerRadii viewBounds:(CGRect)bounds;
 
-
 @end
 
 NS_ASSUME_NONNULL_END

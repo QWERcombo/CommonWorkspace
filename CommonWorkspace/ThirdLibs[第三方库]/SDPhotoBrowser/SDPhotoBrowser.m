@@ -100,7 +100,7 @@
         [[UIApplication sharedApplication].keyWindow addSubview:indicator];
         [indicator startAnimating];
     } else {
-        [ZYPromptUtils promptMsg:@"图片链接加载失败!"];
+        [BasePromptUtils promptMsg:@"图片链接加载失败!"];
     }
     
 }

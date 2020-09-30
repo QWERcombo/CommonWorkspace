@@ -10,18 +10,7 @@
 #define Config_h
 
 
-//        ------ 静态配置 ------
-
-/**
- * 多度的APP_Id
- */
-#define DoorDu_APP_Id   @"62wn5tmgx6ns97pa1v2wy88ddhwmokvn"
-
-/**
- * 多度的APP_KEY
- */
-#define DoorDu_APP_KEY  @"liovi1i4b73vw1rb103mkaz5sq2kfu31"
-
+//------ 静态配置 ------
 
 // 定义网络请求超时时间
 #define NETWORKING_TIMEOUT_SECONDS  20.0f
@@ -66,17 +55,20 @@
 #define NAV_BAR_HEIGHT              (IS_PhoneXAll ? 88.0 : 64.0)
 //底部操作栏高度
 #define Home_Indicator_HEIGHT       (IS_PhoneXAll ? 34.0 : 0.0)
+//状态栏高度
+#define STATUS_BAR_HEIGHT     [UIApplication sharedApplication].statusBarFrame.size.height
 
 
-//打印Log
+
 #ifdef DEBUG
+//打印Log
 #define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
 #else
+
 #define NSLog(FORMAT, ...) nil
+
 #endif
-
-
-
 
 
 #endif /* Config_h */

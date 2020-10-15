@@ -14,7 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 + (instancetype)initCell:(UITableView *)tableView cellName:(NSString *)cellName;
++ (instancetype)initCell:(UITableView *)tableView;
++ (CGFloat)tableViewCellHeight;
 
+- (void)setUpCellLayout;
 @end
 
 NS_ASSUME_NONNULL_END

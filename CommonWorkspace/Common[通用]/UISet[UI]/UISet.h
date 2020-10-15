@@ -32,6 +32,12 @@ typedef NS_ENUM(NSUInteger, ImageViewCornerType) {
                              btnSelectImg:(null_unspecified UIImage *)selectImg
                                    target:(null_unspecified id)target
                                       sel:(null_unspecified SEL)sel;
+///Button背景颜色圆角
++ (void)zj_buttnSetCornerRadius:(CGFloat)cornerRadius
+                backgroundColor:(nullable UIColor *)backgroundColor
+                          onBtn:(nullable UIButton *)onBtn
+                    borderWidth:(CGFloat)borderWidth
+                    borderColor:(nullable UIColor *)borderColor;
 
 ///TextField
 + (UITextField *)getCustomTextFieldWithTextFont:(UIFont *)textFont

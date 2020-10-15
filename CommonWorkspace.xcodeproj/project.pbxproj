@@ -563,7 +563,7 @@
 			children = (
 				568B743222D70DAF002E6F2B /* Category[类目] */,
 				568B743122D70D6B002E6F2B /* UserData[用户数据] */,
-				568B743022D70D0C002E6F2B /* UISet */,
+				568B743022D70D0C002E6F2B /* UISet[UI] */,
 				568B742F22D70CED002E6F2B /* NetWork[网络] */,
 				568B742E22D70CD4002E6F2B /* Config[静态配置] */,
 			);
@@ -604,13 +604,13 @@
 			path = "NetWork[网络]";
 			sourceTree = "<group>";
 		};
-		568B743022D70D0C002E6F2B /* UISet */ = {
+		568B743022D70D0C002E6F2B /* UISet[UI] */ = {
 			isa = PBXGroup;
 			children = (
 				568B743722D70E36002E6F2B /* UISet.h */,
 				568B743822D70E36002E6F2B /* UISet.m */,
 			);
-			path = UISet;
+			path = "UISet[UI]";
 			sourceTree = "<group>";
 		};
 		568B743122D70D6B002E6F2B /* UserData[用户数据] */ = {

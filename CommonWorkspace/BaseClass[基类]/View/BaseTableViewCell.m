@@ -15,22 +15,36 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 
-    // Configure the view for the selected state
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        [self setUpCellLayout];
+    }
+
+    return self;
 }
 
+- (void)setUpCellLayout {
+
+}
 
 + (instancetype)initCell:(UITableView *)tableView cellName:(NSString *)cellName
 {
     
     BaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellName];
-    if (cell == nil) {
+    if (!cell) {
         cell = [[[NSBundle mainBundle]loadNibNamed:cellName owner:nil options:nil] firstObject];
     }
+//    if (!cell) {
+//        cell = [[self alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([self class])];
+//    }
     
     return cell;    
+}
+
++ (CGFloat)tableViewCellHeight {
+    return 44.f;
 }
 
 @end

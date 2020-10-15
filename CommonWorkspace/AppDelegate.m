@@ -111,8 +111,9 @@
     
     self.tabBar = [[BaseTabBarController alloc] init];
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = self.tabBar;
-    
+    [self.window makeKeyAndVisible];
 }
 
 

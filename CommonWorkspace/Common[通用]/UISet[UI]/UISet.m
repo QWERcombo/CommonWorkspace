@@ -49,6 +49,29 @@
     return button;
 }
 
++ (void)zj_buttnSetCornerRadius:(CGFloat)cornerRadius
+                backgroundColor:(UIColor *)backgroundColor
+                          onBtn:(UIButton *)onBtn
+                    borderWidth:(CGFloat)borderWidth
+                    borderColor:(UIColor *)borderColor {
+    
+    if (backgroundColor) {
+        onBtn.backgroundColor = backgroundColor;
+    }
+    if (borderWidth > 0) {
+        onBtn.layer.borderWidth = borderWidth;
+    }
+    if (borderColor) {
+        onBtn.layer.borderColor = borderColor.CGColor;
+    }
+    if (cornerRadius > 0) {
+        onBtn.layer.cornerRadius = cornerRadius;
+        onBtn.layer.masksToBounds = YES;
+    }
+    
+}
+
+
 + (UITextField *)getCustomTextFieldWithTextFont:(UIFont *)textFont
                                       textColor:(UIColor *)textColor
                                      isShowLine:(BOOL)isShowLine {
